@@ -1,0 +1,9 @@
+<div>
+    <div class='wrapper'>
+    <div class='day'>{{toDay}}</div>                       
+    <span *ngFor="let person of dataName;let i = index;let photos of dataPhoto;"> 
+            <img class='img-person' [src]="dataPhoto[i]"/>
+            <p class='font-person'> {{dataName[i]}} </p>
+    </span>            
+    </div>
+</div>
