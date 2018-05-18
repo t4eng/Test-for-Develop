@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  API_BASE_URL:'http://uinames.com/api/?ext&amount=25'
 };
