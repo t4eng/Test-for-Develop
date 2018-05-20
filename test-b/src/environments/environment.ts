@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API_BASE_URL:'http://uinames.com/api/?ext&amount=25'
+  API_BASE_URL:'https://uinames.com/api/?ext&amount=25'
 };
 /*
  * In development mode, to ignore zone related error stack frames such as

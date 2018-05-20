@@ -55,7 +55,15 @@
  
  .font-person{
      margin: 0 auto;
-     font-size: 1em;
+     font-size: 15px;
+     height: 35px;
      display: flex;
      justify-content: center;
+ }
+
+.space{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: center;
  }

@@ -1,11 +1,12 @@
 
-  <app-day toDay="SUN" *ngIf="showComponent"></app-day>  
-  <app-day toDay="MON" *ngIf="showComponent"></app-day>
-  <app-day toDay="TUE" *ngIf="showComponent"></app-day>
-  <app-day toDay="WED" *ngIf="showComponent"></app-day>
-  <app-day toDay="THU" *ngIf="showComponent"></app-day>
-  <app-day toDay="FRI" *ngIf="showComponent"></app-day>
-  <app-day toDay="SAT" *ngIf="showComponent"></app-day>
+  <app-day toDay="SUN" [countMax]="countMax" [countSun]="countSun" *ngIf="showComponent"></app-day>  
+  <app-day toDay="MON" [countMax]="countMax" [countMon]="countMon" *ngIf="showComponent"></app-day>
+  <app-day toDay="TUE" [countMax]="countMax" [countTue]="countTue" *ngIf="showComponent"></app-day>
+  <app-day toDay="WED" [countMax]="countMax" [countWed]="countWed" *ngIf="showComponent"></app-day>
+  <app-day toDay="THU" [countMax]="countMax" [countThu]="countThu" *ngIf="showComponent"></app-day>
+  <app-day toDay="FRI" [countMax]="countMax" [countFri]="countFri" *ngIf="showComponent"></app-day>
+  <app-day toDay="SAT" [countMax]="countMax" [countSat]="countSat" *ngIf="showComponent"></app-day>
+
 
 
   
