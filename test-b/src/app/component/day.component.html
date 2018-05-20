@@ -1,9 +1,38 @@
 <div>
     <div class='wrapper'>
-    <div class='day'>{{toDay}}</div>                       
+    <span class='day'>{{toDay}}</span>                       
     <span *ngFor="let person of dataName;let i = index;let photos of dataPhoto;"> 
             <img class='img-person' [src]="dataPhoto[i]"/>
             <p class='font-person'> {{dataName[i]}} </p>
-    </span>            
+    </span>  
+
+        <span *ngFor="let i = index;let number of arrySun">
+            <span class='space'></span>
+        </span>
+
+        <span *ngFor="let i = index;let number of arryMon">
+            <span class='space'></span>
+         </span>
+
+         <span *ngFor="let i = index;let number of arryTue">
+            <span class='space'></span>
+        </span>
+
+        <span *ngFor="let i = index;let number of arryWed">
+            <span class='space'></span>
+         </span>
+
+         <span *ngFor="let i = index;let number of arryThu">
+            <span class='space'></span>
+        </span>
+
+        <span *ngFor="let i = index;let number of arryFri">
+            <span class='space'></span>
+         </span>
+
+         <span *ngFor="let i = index;let number of arrySat">
+            <span class='space'></span>
+         </span>
+
     </div>
 </div>
