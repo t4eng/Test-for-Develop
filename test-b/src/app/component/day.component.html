@@ -1,6 +1,6 @@
 <div>
     <div class='wrapper'>
-    <span class='day'>{{toDay}}</span>                       
+    <span class='font-day'>{{toDay}}</span>                       
     <span *ngFor="let person of dataName;let i = index;let photos of dataPhoto;"> 
             <img class='img-person' [src]="dataPhoto[i]"/>
             <p class='font-person'> {{dataName[i]}} </p>
