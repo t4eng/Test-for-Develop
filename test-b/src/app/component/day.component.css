@@ -1,32 +1,27 @@
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .wrapper{
         float: left;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .wrapper{
         float: left;
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .wrapper{
         float: left;
     }
 } 
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .wrapper{
         float: left;
     }
 } 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .wrapper{
         float: left;
@@ -39,8 +34,6 @@
  }
 
  .day{
-     display: flex;
-     justify-content: center;
      padding-top: 10px;
      padding-bottom: 20px;
      font-weight: bold;
@@ -49,21 +42,31 @@
  .img-person{
      width: 100%;
      height: 50px;
-     display: flex;
-     justify-content: center;
  }
  
  .font-person{
      margin: 0 auto;
      font-size: 15px;
      height: 35px;
-     display: flex;
-     justify-content: center;
  }
+
+.font-noperson{
+    font-size: 15px;
+    font-weight: bold;
+}
 
 .space{
     width: 100%;
     height: 85px;
+ }
+
+
+.space-bottom{
+    width: 100%;
+    height: 17px;
+}
+
+.day, .img-person, .font-person, .font-noperson, .space, .space-bottom{
     display: flex;
     justify-content: center;
- }
+}
