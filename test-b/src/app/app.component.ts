@@ -18,8 +18,9 @@ export class AppComponent implements OnInit{
   countSun=0;countMon=0;countTue=0;countWed=0;
   countThu=0;countFri=0;countSat=0; countMax;
   numbers=[];
- ngOnInit(){
 
+ ngOnInit(){
+  
       this.apiService.getApi().toPromise().then( res=>{ 
          localStorage.setItem('persons',JSON.stringify(res))
          this.showComponent = true
@@ -62,14 +63,14 @@ export class AppComponent implements OnInit{
       this.numbers.push(this.countFri)
       this.numbers.push(this.countSat)
 
-      console.log(this.numbers);
+      // console.log(this.numbers);
       this.countMax = this.numbers[0] 
       for(var i=0;i<this.numbers.length;i++){
          if(this.numbers[i] > this.countMax){
           this.countMax = this.numbers[i]
          }
       }
-      console.log(this.countMax);
+      // console.log(this.countMax);
       // console.log(Math.max(...this.numbers));
     })//
   } 
