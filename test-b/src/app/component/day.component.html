@@ -6,6 +6,8 @@
             <p class='font-person'> {{dataName[i]}} </p>
     </span>  
 
+    <span class='font-noperson'>{{noPerson}}</span>
+
         <span *ngFor="let i = index;let number of arrySun">
             <span class='space'></span>
         </span>
@@ -33,6 +35,10 @@
          <span *ngFor="let i = index;let number of arrySat">
             <span class='space'></span>
          </span>
+
+    <span *ngIf='!noPerson'>
+    <span class='space-bottom'></span>
+    </span>
 
     </div>
 </div>
